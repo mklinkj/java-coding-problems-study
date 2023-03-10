@@ -6,9 +6,7 @@ import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * 001. 문자 개수 세기: 주어진 문자열에서 문자 개수를 세는 프로그램을 작성하라
- * <p>
- * 나의 해결 버전
+ * [나의 해결] 001. 문자 개수 세기: 주어진 문자열에서 문자 개수를 세는 프로그램을 작성하라
  */
 @Slf4j
 public class MySolution {
