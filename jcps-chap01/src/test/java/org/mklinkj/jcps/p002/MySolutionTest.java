@@ -19,9 +19,11 @@ class MySolutionTest {
   @Test
   void testSolution() {
 
-    Character result = solution.getFirstNonRepeatingCharacter("안녕하세요하세요");
+    Character result = solution.getFirstNonRepeatingCharacter("안녕하세요하세요용녕안");
+    assertThat(result).isEqualTo('용');
 
-    assertThat(result).isEqualTo('하');
+    result = solution.getFirstNonRepeatingCharacter("안녕하세요");
+    assertThat(result).isEqualTo('안');
   }
 
 }

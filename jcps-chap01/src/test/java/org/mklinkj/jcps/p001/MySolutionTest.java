@@ -16,11 +16,11 @@ class MySolutionTest {
 
   @Test
   void testCountChar() {
-    String text = "안녕하세요안녕하세요안녕하세요";
-
-    int result = solution.countChar(text);
-
+    int result = solution.countChar("안녕하세요안녕하세요안녕하세요안녕");
     assertThat(result).isEqualTo(5);
+
+    result = solution.countChar("1234567890");
+    assertThat(result).isEqualTo(10);
   }
 
 }

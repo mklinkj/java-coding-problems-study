@@ -18,9 +18,9 @@ public class MySolution {
     for (char aChar : charArr) {
       Integer count = countMap.get(aChar);
       if (count == null) {
-        countMap.put(aChar, 0);
+        countMap.put(aChar, 1);
       } else {
-        countMap.put(aChar, count + 1);
+        countMap.put(aChar, ++count);
       }
     }
     LOGGER.info("keySet: {}", Arrays.toString(countMap.keySet().toArray()));
